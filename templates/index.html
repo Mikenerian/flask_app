@@ -1,10 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>HELLO</title>
-</head>
-<body>
-    <p>どうもこんにちは</p>
-</body>
+
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>サンプルアプリ</title>
+    </head>
+
+    <body>
+        <p>以下の日程でご都合のよろしい時間帯はございますでしょうか。</p>
+        <div>
+            <input type="datetime-local" id="dateInput" class="date-input">
+            <input type="button" id="dateAddButton" class="date-button" value="追加" >
+        </div>
+        <div>
+            <textarea id="dateList" class="date-output" rows="10" cols="50"></textarea>
+        </div>
+
+        <script src="../js/date.js"></script>
+    </body>
 </html>
