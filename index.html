@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <link href="../css/main.css" rel="stylesheet">
+        <title>サンプルアプリ</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="icon-str">
+                <p>日程調整メーカー</p>
+            </div>
+        </header>
+        <main>
+            <p class="ask-sentence">以下の日程でご都合のよろしい時間帯はございますでしょうか。</p>
+            <div class="date-buttons">
+                <input type="datetime-local" id="dateInput" class="date-input">
+                <input type="submit-button" id="dateAddButton" class="date-button" value="追加" >
+            </div>
+            <div class="candidates">
+                <textarea id="dateList" class="date-output" rows="10" cols="50"></textarea>
+            </div>
+        </main>
+        <footer>
+        </footer>
+        <script src="../js/date.js"></script>
+    </body>
+</html>
